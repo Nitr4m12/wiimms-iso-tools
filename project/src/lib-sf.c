@@ -45,11 +45,11 @@
 #include <errno.h>
 
 #include "dclib/dclib-debug.h"
-#include "libwbfs.h"
+#include "wbfs/libwbfs.h"
 #include "lib-sf.h"
 #include "wbfs-interface.h"
 #include "titles.h"
-#include "cert.h"
+#include "wbfs/cert.h"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

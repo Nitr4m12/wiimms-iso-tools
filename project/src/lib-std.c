@@ -59,7 +59,7 @@
   #include <linux/fs.h>
 #endif
 
-#include "version.h"
+//#include "version.h"
 #include "lib-std.h"
 #include "lib-sf.h"
 #include "lib-bzip2.h"
@@ -68,7 +68,7 @@
 #include "crypt.h"
 #include "titles.h"
 #include "dclib-utf8.h"
-#include "config-paths.inc"
+//#include "config-paths.inc"
 
 //
 ///////////////////////////////////////////////////////////////////////////////
@@ -504,7 +504,7 @@ void SetupLib ( int argc, char ** argv, ccp p_progname, enumProgID prid )
     #elif defined(WIIMM)
 	revision_id = (prid << 20) + SYSTEMID + REVISION_NUM + REVID_WIIMM;
     #else
-	revision_id = (prid << 20) + SYSTEMID + REVISION_NUM + REVID_UNKNOWN;
+	revision_id = (prid << 20) + SYSTEMID + /*REVISION_NUM*/ + REVID_UNKNOWN;
     #endif
 
 
@@ -3905,7 +3905,7 @@ void PrintConfigFile ( FILE *f, const config_t *config )
 		*destval = QuoteStringCircS(val,EmptyQuote,CHMD__MODERN);
 	}
 
-	if ( brief_count > 0 )
+	/*if ( brief_count > 0 )
 	    fprintf(f,"[PATHS]\n"
 		"base\t= %s\n"
 		"install\t= %s\n"
@@ -3925,7 +3925,7 @@ void PrintConfigFile ( FILE *f, const config_t *config )
 		,dest.install_config
 		,dest.share_path
 		,dest.titles_path
-		);
+		);*/
 
 	ResetConfig(&dest);
     }

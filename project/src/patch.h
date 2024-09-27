@@ -40,7 +40,7 @@
 #include <stdio.h>
 #include "dclib/dclib-types.h"
 #include "lib-std.h"
-#include "wiidisc.h"
+#include "wbfs/wiidisc.h"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

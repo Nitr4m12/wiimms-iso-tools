@@ -52,14 +52,14 @@
 #include <errno.h>
 
 #include "dclib/dclib-debug.h"
-#include "version.h"
-#include "wiidisc.h"
+//#include "version.h"
+#include "wbfs/wiidisc.h"
 #include "lib-sf.h"
 #include "titles.h"
 #include "wbfs-interface.h"
 
-#include "ui-wwt.c"
-#include "logo.inc"
+#include "ui/ui-wwt.c"
+#include "logo.h"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

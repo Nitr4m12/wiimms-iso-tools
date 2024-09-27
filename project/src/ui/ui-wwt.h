@@ -42,8 +42,8 @@
 
 #ifndef SZS_UI_WWT_H
 #define SZS_UI_WWT_H
-#include "dclib-basics.h"
-#include "dclib-ui.h"
+#include "dclib/dclib-basics.h"
+#include "dclib/dclib-ui.h"
 
 //
 ///////////////////////////////////////////////////////////////////////////////
