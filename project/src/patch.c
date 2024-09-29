@@ -43,7 +43,7 @@
 #include <ctype.h>
 
 #include "patch.h"
-//#include "version.h"
+#include "version.h"
 #include "lib-std.h"
 #include "lib-sf.h"
 #include "wbfs-interface.h"
@@ -2017,7 +2017,7 @@ enumError CreateWritePatchF
 		"Writing patch header failed: %s",pat->fname);
 
     return WritePatchComment(pat,"%s",
-		"Creator: " /*TOOLSET_SHORT " v" VERSION " r" REVISION " " SYSTEM2*/ );
+		"Creator: " TOOLSET_SHORT " v" VERSION " r" REVISION " " SYSTEM2 );
 }
 
 ///////////////////////////////////////////////////////////////////////////////

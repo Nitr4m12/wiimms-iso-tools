@@ -39,13 +39,13 @@
 #include <ctype.h>
 
 #include "dclib/dclib-debug.h"
-//#include "version.h"
+#include "version.h"
 #include "dclib/dclib-types.h"
 #include "lib-std.h"
 #include "lib-sf.h"
 
-#include "ui/ui-wdf.c"
-#include "logo.h"
+#include "ui-wdf.c"
+#include "logo.inc"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

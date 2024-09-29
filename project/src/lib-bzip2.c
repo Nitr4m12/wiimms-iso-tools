@@ -40,8 +40,8 @@
   #ifndef NO_BZIP2
 /******************/
 
-#include <bzlib.h>
-//#include "libbz2/bzlib.h"
+//#include <bzlib.h>
+#include "libbz2/bzlib.h"
 #include "lib-bzip2.h"
 
 /************************************************************************

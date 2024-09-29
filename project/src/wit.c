@@ -55,8 +55,8 @@
 #include "dclib/dclib-debug.h"
 #include "dclib/dclib-file.h"
 
-//#include "version.h"
-#include "wbfs/wiidisc.h"
+#include "version.h"
+#include "wiidisc.h"
 #include "lib-std.h"
 #include "lib-sf.h"
 #include "titles.h"
@@ -65,8 +65,8 @@
 #include "match-pattern.h"
 #include "crypt.h"
 
-#include "ui/ui-wit.c"
-#include "logo.h"
+#include "ui-wit.c"
+#include "logo.inc"
 
 //-----------------------------------------------------------------------------
 

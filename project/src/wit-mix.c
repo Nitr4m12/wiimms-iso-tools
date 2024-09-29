@@ -2,13 +2,12 @@
 #define _GNU_SOURCE 1
 
 #include "dclib/dclib-debug.h"
-#include "wbfs/wiidisc.h"
-
+#include "wiidisc.h"
 #include "lib-std.h"
 #include "lib-sf.h"
 #include "iso-interface.h"
 
-#include "ui/ui-wit.h"
+#include "ui-wit.h"
 
 //-----------------------------------------------------------------------------
 

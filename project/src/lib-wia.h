@@ -39,7 +39,7 @@
 
 #include "dclib/dclib-types.h"
 #include "lib-std.h"
-#include "wbfs/wiidisc.h"
+#include "libwbfs/wiidisc.h"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

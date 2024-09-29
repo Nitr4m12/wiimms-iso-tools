@@ -42,8 +42,8 @@
 
 #ifndef SZS_UI_WDF_H
 #define SZS_UI_WDF_H
-#include "dclib/dclib-basics.h"
-#include "dclib/dclib-ui.h"
+#include "dclib-basics.h"
+#include "dclib-ui.h"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

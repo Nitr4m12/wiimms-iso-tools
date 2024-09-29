@@ -34,7 +34,7 @@
  *                                                                         *
  ***************************************************************************/
 
-#include "dclib/include/dclib/dclib-system.h"
+#include "dclib/dclib-system.h"
 
 #ifndef PRINT_SYSTEM_SETTINGS
  int main ( int argc, char ** argv )

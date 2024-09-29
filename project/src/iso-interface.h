@@ -42,8 +42,8 @@
 #include "patch.h"
 #include "dclib-utf8.h"
 #include "match-pattern.h"
-#include "wbfs/libwbfs.h"
-#include "wbfs/rijndael.h"
+#include "libwbfs/libwbfs.h"
+#include "libwbfs/rijndael.h"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

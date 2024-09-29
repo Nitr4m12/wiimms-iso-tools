@@ -38,7 +38,7 @@
 #define WIT_MATCH_PATTERN_H 1
 
 #include "dclib/dclib-types.h"
-#include "wbfs/wiidisc.h"
+#include "wiidisc.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 

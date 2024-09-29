@@ -46,7 +46,7 @@
 #include <arpa/inet.h>
 
 #include "dclib/dclib-debug.h"
-#include "wbfs/libwbfs.h"
+#include "libwbfs.h"
 #include "lib-sf.h"
 #include "wbfs-interface.h"
 

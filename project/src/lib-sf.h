@@ -41,7 +41,7 @@
 #include "lib-wia.h"
 #include "lib-ciso.h"
 #include "lib-gcz.h"
-#include "wbfs/libwbfs.h"
+#include "libwbfs.h"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

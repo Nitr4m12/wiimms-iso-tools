@@ -51,7 +51,7 @@
 #include "dclib/dclib-system.h"
 
 #include "lib-error.h"
-#include "wbfs/file-formats.h"
+#include "libwbfs/file-formats.h"
 
 //
 ///////////////////////////////////////////////////////////////////////////////
