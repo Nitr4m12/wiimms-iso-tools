@@ -43,7 +43,7 @@
 #include <ctype.h>
 
 #include "patch.h"
-#include "version.h"
+//#include "version.h"
 #include "lib-std.h"
 #include "lib-sf.h"
 #include "wbfs-interface.h"

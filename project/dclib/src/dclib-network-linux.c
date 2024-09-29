@@ -45,7 +45,7 @@
  #include <linux/route.h>
 #endif
 
-#include "dclib/dclib-network.h"
+#include "dclib-network.h"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

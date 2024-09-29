@@ -240,7 +240,7 @@ MAIN_TOOLS_OBJ	:= $(patsubst %,%.o,$(MAIN_TOOLS) $(EXTRA_TOOLS))
 OTHER_TOOLS_OBJ	:= $(patsubst %,%.o,$(TEST_TOOLS) $(HELPER_TOOLS))
 
 # dclib
-DCLIB_DIR	:= ./dclib/include
+DCLIB_DIR	:= ./dclib
 DIR_LIST	+= $(DCLIB_DIR)
 VPATH		+= $(DCLIB_DIR)
 CFLAGS		+= -I$(DCLIB_DIR)
@@ -286,8 +286,8 @@ DIR_LIST	+= $(SCRIPTS) $(TEMPLATES) $(MODULES)
 
 #VPATH		+= src src/libwbfs src/lzma src/crypto $(UI) work
 #DIR_LIST	+= src src/libwbfs src/lzma src/crypto $(UI) work
-VPATH		+= src src/libwbfs/include src/crypto $(UI) work
-DIR_LIST	+= src src/libwbfs/include src/crypto $(UI) work
+VPATH		+= src src/libwbfs src/crypto $(UI) work
+DIR_LIST	+= src src/libwbfs src/crypto $(UI) work
 
 DEFINES1	+= -DLARGE_FILES -D_FILE_OFFSET_BITS=64
 DEFINES1	+= -DWIT		# compile wit tools (for shared sources (e.g. libwbfs))
@@ -300,7 +300,7 @@ DEFINES		=  $(strip $(DEFINES1) $(MODE) $(XDEF))
 CFLAGS		+= -std=gnu99 -fomit-frame-pointer -fno-strict-aliasing -funroll-loops
 CFLAGS		+= -Wall -Wno-parentheses -Wno-unused-function
 #CFLAGS		+= -O3 -Isrc/libwbfs -Isrc/lzma -Isrc -I$(UI) -I. -Iwork
-CFLAGS		+= -O3 -Isrc/libwbfs/include -Isrc -I$(UI) -I. -Iwork
+CFLAGS		+= -O3 -Isrc/libwbfs -Isrc -I$(UI) -I. -Iwork
 
 ifeq ($(SYSTEM_LINUX),1)
   LIBS		+= -ltinfo

@@ -16,4 +16,3 @@ set(SOURCES
 target_sources(wit PRIVATE ${SOURCES})
 target_sources(wwt PRIVATE ${SOURCES})
 target_sources(wdf PRIVATE ${SOURCES})
-target_sources(wfuse PRIVATE ${SOURCES})

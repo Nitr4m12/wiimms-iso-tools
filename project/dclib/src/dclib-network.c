@@ -50,8 +50,8 @@
 #include <stddef.h>
 #include <ifaddrs.h>
 
-#include "dclib/dclib-network.h"
-#include "dclib/dclib-punycode.h"
+#include "dclib-network.h"
+#include "dclib-punycode.h"
 
 ///////////////////////////////////////////////////////////////////////////////
 

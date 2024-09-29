@@ -59,7 +59,7 @@
   #include <linux/fs.h>
 #endif
 
-#include "version.h"
+//#include "version.h"
 #include "lib-std.h"
 #include "lib-sf.h"
 #include "lib-bzip2.h"
@@ -68,7 +68,7 @@
 #include "crypt.h"
 #include "titles.h"
 #include "dclib-utf8.h"
-#include "config-paths.inc"
+//#include "config-paths.inc"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

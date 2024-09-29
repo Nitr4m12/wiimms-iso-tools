@@ -52,15 +52,15 @@
 #include "dclib/dclib-ui.h"
 
 #ifdef DCLIB_MYSQL
-  #include "dclib/dclib-mysql.h"
+  #include "dclib-mysql.h"
 #endif
 
 #if DCLIB_TERMINAL
-  #include "dclib/dclib-terminal.h"
+  #include "dclib-terminal.h"
 #endif
 
 #if DCLIB_THREAD
-  #include "dclib/dclib-thread.h"
+  #include "dclib-thread.h"
 #endif
 
 //

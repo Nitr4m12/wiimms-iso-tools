@@ -38,7 +38,7 @@
 #define WIT_UI_H
 
 #define OPT_OLD_NEW 1		// 0 | 1 -> enable options --OLD --NEW
-#include "dclib/dclib-ui.h"
+#include "dclib-ui.h"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

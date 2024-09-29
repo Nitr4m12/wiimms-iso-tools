@@ -46,9 +46,9 @@
 #include "lib-std.h"
 #include "iso-interface.h"
 #include "ui.h" // [[dclib]] wrapper
-#include "dclib/dclib-ui.h"
+#include "dclib-ui.h"
 
-#include "dclib/dclib-gen-ui.h"
+#include "dclib-gen-ui.h"
 #include "ui-head.inc"
 
 //
@@ -146,7 +146,7 @@ info_t info_tab[] =
     { T_END, 0,0,0,0 }
 };
 
-#include "dclib/dclib-gen-ui.inc"
+#include "dclib-gen-ui.inc"
 
 //
 ///////////////////////////////////////////////////////////////////////////////
