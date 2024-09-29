@@ -61,7 +61,7 @@
 #endif
 
 #include "dclib/dclib-debug.h"
-//#include "version.h"
+#include "version.h"
 #include "dclib/dclib-types.h"
 #include "lib-sf.h"
 #include "lib-std.h"

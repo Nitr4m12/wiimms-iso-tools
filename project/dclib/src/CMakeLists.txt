@@ -22,26 +22,26 @@ target_sources(${PROJECT_NAME} PRIVATE
 ##    SET UP COMPILE DEFINITIONS AND OPT SOURCES
 ## ==============================================
 
+if (DCLIB_HAVE_USABLE_SIZE EQUAL 1)
+    target_compile_definitions(${PROJECT_NAME} PUBLIC DCLIB_HAVE_USABLE_SIZE=1)
+endif()
+
 if (DCLIB_THREAD EQUAL 1)
-    target_sources(${PROJECT_NAME} PRIVATE dclib-thread.c)
+    target_sources(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_LIST_DIR}/dclib-thread.c)
     target_compile_definitions(${PROJECT_NAME} PUBLIC DCLIB_THREAD=1)
 endif()
 
 if (DCLIB_NETWORK EQUAL 1)
-    set(${PROJECT_NAME} PRIVATE dclib-network.c dclib-punycode.c)
-    target_compile_definitions(${PROJECT_NAME} PUBLIC DCLIB_NETWORD=1)
+    target_sources(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_LIST_DIR}/dclib-network.c ${CMAKE_CURRENT_LIST_DIR}/dclib-punycode.c)
+    target_compile_definitions(${PROJECT_NAME} PUBLIC DCLIB_NETWORK)
 endif()
 
 if (DCLIB_MYSQL EQUAL 1)
-    set(${PROJECT_NAME} PRIVATE dclib-mysql.c)
-    target_compile_definitions(${PROJECT_NAME} PUBLIC DCLIB_MYSQL=1)
+    target_sources(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_LIST_DIR}/dclib-mysql.c)
+    target_compile_definitions(${PROJECT_NAME} PUBLIC DCLIB_MYSQL)
 endif()
 
 if (DCLIB_TERMINAL EQUAL 1)
-    set(${PROJECT_NAME} PRIVATE dclib-terminal.c dclib-command.c)
-    target_compile_definitions(${PROJECT_NAME} PUBLIC DCLIB_TERMINALL=1)
-endif()
-
-if (DCLIB_HAVE_USABLE_SIZE EQUAL 1)
-    target_compile_definitions(${PROJECT_NAME} PUBLIC DCLIB_HAVE_USABLE_SIZE=1)
+    target_sources(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_LIST_DIR}/dclib-terminal.c ${CMAKE_CURRENT_LIST_DIR}/dclib-command.c)
+    target_compile_definitions(${PROJECT_NAME} PUBLIC DCLIB_TERMINAL=1)
 endif()

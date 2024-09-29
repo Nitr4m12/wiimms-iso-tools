@@ -8,7 +8,7 @@
 #include "lib-sf.h"
 #include "iso-interface.h"
 
-#include "ui/ui-wit.h"
+#include "ui-wit.h"
 
 //-----------------------------------------------------------------------------
 

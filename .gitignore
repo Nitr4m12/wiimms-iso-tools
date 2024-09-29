@@ -6,6 +6,7 @@ project/edit-list/
 project/Makefile.setup
 project/Makefile.local
 project/Makefile.user
+project/setup.cmake
 
 build/
 .cache

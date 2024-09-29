@@ -39,9 +39,9 @@
 #include <mysql/mysql.h>
 #include <mysql/errmsg.h>
 
-#include "dclib-mysql.h"
-#include "dclib-file.h"
-#include "dclib-network.h"
+#include "dclib/dclib-mysql.h"
+#include "dclib/dclib-file.h"
+#include "dclib/dclib-network.h"
 
 // http://dev.mysql.com/doc/refman/5.1/en/c-api-functions.html
 

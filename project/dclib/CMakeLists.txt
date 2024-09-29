@@ -10,20 +10,23 @@ target_include_directories(${PROJECT_NAME}
         ${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 
-add_subdirectory(src)
+target_link_libraries(${PROJECT_NAME} PUBLIC m)
+
+find_package(Curses REQUIRED)
+target_link_libraries(${PROJECT_NAME} PUBLIC ncurses)
 
 ## ----------------------
 ##    PREPARE VARIABLES
 ## ----------------------
 
-if (NOT DEFINED DCLIB_THREAD)
-    set(DCLIB_THREAD 0)    
+if (EXISTS /usr/include/mysql/mysql.h)
+    set(DCLIB_MYSQL 0)
+else()
+    target_link_libraries(${PROJECT_NAME} PUBLIC mariadb)   
 endif()
 
-target_link_libraries(${PROJECT_NAME} PUBLIC mariadb)
-if (NOT mariadb_FOUND)
-    execute_process(COMMAND "[[ -f /usr/include/mysql/mysql.h ]]; echo $$((!$$?))" 
-                    OUTPUT_VARIABLE DCLIB_MYSQL)
+if (NOT DEFINED DCLIB_THREAD)
+    set(DCLIB_THREAD 0)    
 endif()
 
 if (NOT DEFINED DCLIB_TERMINAL)
@@ -40,4 +43,5 @@ if (NOT DEFINED DCLIB_HAVE_USABLE_SIZE)
                     OUTPUT_VARIABLE DCLIB_HAVE_USABLE_SIZE)
 endif()
 
-
+add_subdirectory(include)
+add_subdirectory(src)

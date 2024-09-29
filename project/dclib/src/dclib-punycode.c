@@ -32,13 +32,13 @@
  *                                                                         *
  ***************************************************************************/
 
-#include "dclib-basics.h"
-#include "dclib-utf8.h"
-#include "dclib-punycode.h"
+#include "dclib/dclib-basics.h"
+#include "dclib/dclib-utf8.h"
+#include "dclib/dclib-punycode.h"
 
 #include <limits.h>
 
-#include "dclib-punycode.inc"
+#include "dclib/dclib-punycode.inc"
 
 //
 ///////////////////////////////////////////////////////////////////////////////

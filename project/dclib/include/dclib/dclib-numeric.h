@@ -35,8 +35,8 @@
 #ifndef DCLIB_NUMERIC_H
 #define DCLIB_NUMERIC_H 1
 
-#include "dclib-types.h"
-#include "dclib-debug.h"
+#include "dclib/dclib-types.h"
+#include "dclib/dclib-debug.h"
 #include <math.h>
 
 //
